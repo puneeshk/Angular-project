@@ -1,1 +1,189 @@
 /* You can add global styles to this file, and also import other style files */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 14px;
+  color: #ddd;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-size: 14px;
+  color: #ddd;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	font-size: 14px;
+  color: #ddd;
+}
+:-moz-placeholder { /* Firefox 18- */
+	font-size: 14px;
+  color: #ddd;
+}
+.full-col{
+	width:100%;
+	height:100%;
+	display:table;
+}
+.full-col .inner{
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+html, body{
+	height:100%;
+}
+body{
+	font-size:15px;
+	font-family: 'Open Sans', sans-serif;
+}
+.login-bg{
+	background:#004c93;
+}
+.login{
+	background:#fff;
+	width:100%;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow: 0px 0px 66px 4px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0px 0px 66px 4px rgba(0,0,0,0.28);
+	box-shadow: 0px 0px 66px 4px rgba(0,0,0,0.28);
+	overflow:hidden;
+}
+.logo-section{
+	background:url("assets/images/login-bg.jpg") no-repeat;
+	background-size:cover;
+	width:100%;
+	padding:20px 60px;
+	text-align:center;
+	float:left;
+}
+.logo-section img{
+	width:100%;
+}
+.login-form{
+	width:100%;
+	font-size:12px;
+	padding:15px;
+	float:left;
+}
+.login-form a{
+	font-weight:600;
+}
+.login-form .form-group{
+	position:relative;
+	margin-bottom:30px;
+}
+.login-form .form-group i{
+	color:#a3a3a3;
+	font-size:20px;
+	position: absolute;
+    z-index: 1;
+    top: 12px;
+}
+.login-form .form-control{
+	height:46px;
+	border:none;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;
+	border-bottom:2px solid #e8e8e8;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	padding-left:28px;
+}
+.login-form .form-control:focus{
+	border-bottom:2px solid #337ab7;
+	transition-duration:0.5s;
+}
+/* Custom Checkbox */
+.custom-check{
+	display:none;
+}
+.custom-check + label{
+	position:relative;
+	padding-left:22px;
+}
+.custom-check + label:before{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	content: "";
+	border: 2px solid #e6e7e8;
+	left: 0;
+	top: 0;
+	transition: all 0.3s;
+	background: #fff;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.custom-check.second + label:before{
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius:50px;
+	border:2px solid #cbcbcb;
+}
+.custom-check:checked + label:before{
+	background:#004c93;
+	border-color:#004c93;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.custom-check + label:after{
+	width: 12px;
+	height: 7px;
+	position: absolute;
+	content: "";
+	transition: all 0.3s;
+	left: 2px;
+	border: 2px solid transparent;
+	transform: rotate(0deg);
+	top: 4px;
+}
+.custom-check:checked + label:after{
+	border-left-color: #fff;
+	border-bottom-color: #fff;
+	transform: rotate(-45deg);
+}
+/* Custom Checkbox */
+.login-form .signup{
+	color:#a3a3a3;
+	font-size:13px;
+	text-align:center;
+	margin:30px 0 0 0;
+	display:block;
+}
+
+@media only screen and (min-width: 768px) {
+	.logo-section{
+		width:50%;
+		padding:74px 60px;
+	}
+	.login-form{
+		width:50%;
+		font-size:15px;
+		padding:30px;
+	}
+	.custom-check + label{
+		font-size:14px;
+	}
+	.custom-check + label:before{
+		top: 2px;
+	}
+	.login-form .signup{
+		font-size:14px;
+	}
+	.navbar-nav > li > a {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.logo-section img{
+		width:auto;
+	}
+	.login-form{
+		padding:64px 36px;
+	}
+	.custom-check + label{
+		font-size:15px;
+	}
+}
